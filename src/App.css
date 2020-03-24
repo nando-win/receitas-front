@@ -1,7 +1,10 @@
 .App {
   text-align: center;
+  background-color: lightgrey;
+  min-height: 100vh;
+  justify-content: center;
 }
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +38,57 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.header {
+  text-align: center;
+  display: flex;
+}
+
+.App-header {
+  min-width: 100vh;
+  max-height: 10vh;
+  display: flex;
+  align-items: center;
+  background-color: darkorange;
+  padding: 0 10%;
+}
+
+.middleBanner {
+  color: darkorange;
+}
+
+.buttonPlace {
+  width: max-content;
+  display: flex;
+  justify-content: right;
+  /* align-items: flex-end; */
+}
+
+.enterButton {
+  background-color: darkorange;
+  height: 30px;
+  width: 100px;
+  border-radius: 10%;
+  color: white;
+}
+
+body {
+  background-color: white;
+  align-items: center;
+  justify-items: center;
+}
+
+.loginBox {
+  justify-items: center;
+  align-items: center;
+  min-width: 100vh;
+}
+/* 
+.mailBox, .passwordBox {
+  display: flex;
+  justify-content: center;
+} */
+
+.link {
+  text-decoration: none;
 }
