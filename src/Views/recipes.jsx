@@ -10,7 +10,19 @@ import {
 export class Recipes extends Component {
 
     componentDidMount = () => {
-        console.log(localStorage.getItem('login'))
+        fetch("​https://receitas.devari.com.br/api/v1/category", {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json;charset=UTF-8',
+                'token': localStorage.getItem('token')
+            },
+        })
+        .then(function(response) {
+            console.log(response);
+        }).catch(function (response) {
+            console.log(response);
+        });
     } 
 
     render() {
